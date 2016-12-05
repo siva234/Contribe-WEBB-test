@@ -1,0 +1,67 @@
+div{
+    border: 1px solid black;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#viewdiv{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+#viewdiv button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+#viewimage{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    height: 500px;
+    width: 600px;
+}
+#displayphotos .btns{
+    height:30px;
+    width: 80px;
+    display: inline;
+}
+#displayphotos{
+    width: 100px;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+}
+#displayphotos:hover{
+    width: 180px;
+}
+
+
+#gallery_form{
+    position: fixed;
+    top: 10%;
+    border: 1px solid black;
+    background-color: gainsboro;
+    display: none;
+    height: 80px;
+    width: 200px;
+}
+.galleries {
+    flex: 1;
+    -webkit-flex: 1;
+    height: 80px;
+    width: 100px;
+}

@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flicker Search App</title>
+    <script type="text/javascript" src="JS/search.js"></script>
+    <script type="text/javascript" src="JS/mouse_action.js"></script>
+    <script type="text/javascript" src="JS/display.js"></script>
+    <script type="text/javascript" src="JS/gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+<div id="search_frame">
+        <form>
+            <input type="text" id="search_word">
+            <input type="button" onclick="search()" value="search">
+        </form>
+</div>
+<div id="display_frame"></div>
+<div id="viewdiv" onclick="closeViewFunc()"><button value="[X]" onclick="closeViewFunc()"></button> </div>
+<div id="gallery_frame">
+    <input type="button" onclick="galleryFunc()" value="{+} Create Gallery">
+</div>
+   <center><form id="gallery_form">
+        <input type="text" value="Are you sure you want create a gallery with this selection?" disabled>
+        <input type="button" onclick="createGallery()" value="Create">
+    </form></center>
+</body>
+</html>
