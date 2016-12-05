@@ -11,7 +11,7 @@ function createGallery() {
     n=n+1;
     var gform = document.getElementById('gallery_form');
     gform.style = 'display:none';
-    for (var i=0 ; i<addimages.length;i++)
+    for (var i=0 ; i<m;i++)
     {
         if (i==0)
         {
