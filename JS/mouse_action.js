@@ -29,5 +29,6 @@ function closeViewFunc() {
 function addFunc(image){
 
     addimages[m] = ' '+image;
+    alert(image+' has been added to selection.');
     m++;
 }

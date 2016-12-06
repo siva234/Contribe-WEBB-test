@@ -28,7 +28,6 @@ function search(){
         if (err != null) {
             alert('Something went wrong: ' + err);
         } else {
-            console.log(data.photos.photo);
 
             display(data.photos.photo);
         }
