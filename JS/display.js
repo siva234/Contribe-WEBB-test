@@ -1,4 +1,9 @@
-//Search Display of images
+/*
+ *Creating image src urls to display the search results to the user
+ *
+ * @params
+ * photo: Json object containing all the search results
+ */
 function display(photo) {
     var images = [1];
     var i = 0;
@@ -10,6 +15,13 @@ function display(photo) {
     }
     createDisplay(images);
 }
+
+/*
+ *Displaying photos in the images on display_frame div
+ *
+ * @params
+ *images: An array of images to be displayed
+ */
 function createDisplay(images) {
     var node=document.getElementById("display_frame");
     console.log(node.childElementCount);

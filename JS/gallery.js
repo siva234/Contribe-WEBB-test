@@ -1,16 +1,30 @@
-var n=0;
-var galleryarray = new Array(20);
+var n=0;                                //Gallery number
+var galleryarray = new Array(20);       //2D Array for storing the images in each gallery
 for(var i=0;i<20;i++){
     galleryarray[i] = new Array(30);
 }
+
+/*
+ *Function for displaying the gallery_form
+ */
 function galleryFunc() {
     var gform = document.getElementById('gallery_form');
     gform.style = 'display:inline';
 }
+
+
+/*
+ *Function for closing the gallery_form
+ */
 function closeForm() {
     var gform = document.getElementById('gallery_form');
     gform.style = 'display:none';
 }
+
+
+/*
+ *Function for creating and adding the gallery to gallery_frame
+ */
 function createGallery() {
     if (addimages[0] == 0)
     {
@@ -42,6 +56,12 @@ function createGallery() {
     }
 }
 
+/*
+ *Function for displaying the images in the gallery selected
+ *
+ *@params
+ * gallerynumber: The unique number of the gallery selected
+ */
 function displayGallery(gallerynumber) {
     var gimages = [];
     for(var i=0 ;i<(galleryarray[gallerynumber][0]);i++)

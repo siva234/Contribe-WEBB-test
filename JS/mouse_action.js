@@ -1,7 +1,10 @@
 var m =0;
-var addimages = [0];
+var addimages = [0]; //array for storing the selected images
 /*
-* Function for activating the view button
+* Function for activating the view button on the images
+*
+* @params
+* image: Link of the image to view
  */
 function viewFunc(image){
 
@@ -19,6 +22,9 @@ function closeViewFunc() {
 }
 /*
  * Function for activating the add button
+ *
+ * @params
+ * image: Link of the image selected
  */
 function addFunc(image){
 
