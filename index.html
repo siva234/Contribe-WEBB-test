@@ -11,19 +11,20 @@
 </head>
 <body>
 <div id="search_frame">
-        <form>
-            <input type="text" id="search_word">
-            <input type="button" onclick="search()" value="search">
+    <form>
+            <input type="text" style="height: 30px;width: 300px" id="search_word">
+            <input type="button" class="cssbtns" onclick="search()" value="search">
         </form>
 </div>
-<div id="display_frame"></div>
+<div id="display_frame" class="row"></div>
 <div id="viewdiv" onclick="closeViewFunc()"><button value="[X]" onclick="closeViewFunc()">[X]</button> </div>
 <div id="gallery_frame">
-    <input type="button" onclick="galleryFunc()" value="{+} Create Gallery">
+    <input type="button" class="cssbtns" onclick="galleryFunc()" value="{+} Create Gallery">
 </div>
    <center><form id="gallery_form">
-        <input type="text" value="Are you sure you want create a gallery with this selection?" disabled>
+        <input type="text" value="Do you want to proceed?" width="500px" style="background-color: gainsboro" disabled>
         <input type="button" onclick="createGallery()" value="Create">
+       <input type="button" onclick="closeForm()"value="Cancel">
     </form></center>
 </body>
 </html>

@@ -22,12 +22,14 @@ function createDisplay(images) {
         {
             var Lnk= images[i];
             var newimagetag=document.createElement('div');
-            newimagetag.flex =1;
+            //newimagetag.flex =1;
             newimagetag.id = "displayphotos";
-            newimagetag.innerHTML = '<img id="thumbimage" src='+images[i]+'>'+
+            newimagetag.class = "col-2";
+            newimagetag.innerHTML = '<img id="thumbimage" src='+images[i]+' style="display:inline-block;">'+
                 '<form><input type="button" id="viewbtn" class="btns" value="VIEW" onclick="viewFunc(' + "'" + images[i] + "'" + ')">'+
                 '<input type="button" id="addbtn" class="btns" value="ADD" onclick="addFunc(' + "'" + images[i] + "'" + ')"></form>';
-            newimagetag.style="float:left;background-color:grey;";
+            newimagetag.style="background-color:grey;";
             node.appendChild(newimagetag);
+
         }
 }
