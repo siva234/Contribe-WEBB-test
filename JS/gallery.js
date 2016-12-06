@@ -12,15 +12,14 @@ function closeForm() {
     gform.style = 'display:none';
 }
 function createGallery() {
-    n=n+1;
-    if (addimages == [0])
+    if (addimages[0] == 0)
     {
         alert("There are no Images selected. Please select the images before you add...")
         closeForm();
     }
     else {
         closeForm();
-
+        n=n+1;
         for (var i = 0; i < (m + 1); i++) {
             if (i == 0) {
                 //galleryarray[i] = new array();

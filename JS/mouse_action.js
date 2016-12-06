@@ -1,5 +1,5 @@
 var m =0;
-var addimages= [m];
+var addimages = [0];
 /*
 * Function for activating the view button
  */

@@ -26,14 +26,6 @@ img{
     width: 100%;
     background-color: black;
 }
-#viewdiv button{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    height: 250px;
-    width: 250px;
-    color: white;
-}
 #viewimage{
     position: absolute;
     top: 10%;
