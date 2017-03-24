@@ -1,6 +1,3 @@
-# Contribe-WEBB-test
-Technical round at Contribe
-
 Goal: Create a single page application (SAP) with connection to the photo service Flickr to select and view images from a particular search.
  
 User scenario
@@ -16,7 +13,3 @@ User scenario
  
 Rules
 You are not allowed to use third-party library (e.g. Angular or Jquery).
-
-Your solution must be public on Github or Bitbucket.
-
-To be able to test the solution, you should only need to clone the repo from the above services and double-click index.html. Accordingly, it is allowed to only use HTML, CSS and Javascript.
